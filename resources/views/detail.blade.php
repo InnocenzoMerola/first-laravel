@@ -20,10 +20,10 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="<?php echo route('book.create') ?>">Crea</a>
+        <a class="nav-link active" aria-current="page" href="<?php echo route('books.create') ?>">Crea</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="<?php echo route('book.list') ?>">Libri</a>
+        <a class="nav-link" href="<?php echo route('books.list') ?>">Libri</a>
 
         </li>
         
@@ -38,6 +38,7 @@
 <div class="row justify-content-center mt-5">
 <div class="col-5">
     <h1>Pagina di dettagli</h1>
+    <h2>Libro con id <?= $id ?></h2>
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">

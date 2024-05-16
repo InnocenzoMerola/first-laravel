@@ -15,7 +15,9 @@ class BookController extends Controller
     }
 
     public function detail($id){
-        return view('detail') . $id;
+        return view('detail', [
+            'id' => $id
+        ]);
     }
 
     public function edit($id){

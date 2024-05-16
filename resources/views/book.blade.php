@@ -20,11 +20,11 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="<?php echo route('book.create') ?>">Crea</a>
+        <a class="nav-link active" aria-current="page" href="<?php echo route('books.create') ?>">Crea</a>
 
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="<?php echo route('book.list') ?>">Libri</a>
+        <a class="nav-link" href="<?php echo route('books.list') ?>">Libri</a>
 
         </li>
         
