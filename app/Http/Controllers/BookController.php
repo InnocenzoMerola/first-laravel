@@ -6,22 +6,32 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
-    public function list(){
-        return view('book');
+    public function index(){
+
+        $titles = [
+            'piccolo principe',
+            'promessi sposi',
+            'harry potter',
+            'maze runner'
+        ];
+
+        return view('books.index', [
+            'titles' => $titles
+        ]);
     }
 
     public function create(){
-        return view('createBook');
+        return view('books.createBook');
     }
 
-    public function detail($id){
-        return view('detail', [
+    public function show($id){
+        return view('books.show', [
             'id' => $id
         ]);
     }
 
     public function edit($id){
-        return view('edit');
+        return view('books.edit');
     }
 
     public function delete(){}
